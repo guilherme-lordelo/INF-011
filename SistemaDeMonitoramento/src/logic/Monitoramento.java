@@ -7,7 +7,7 @@ public class Monitoramento {
 	private static Unidade[] units = new Unidade[10];
 	
 	
-	public static Unidade newUnit(boolean mobilidade,String id, float abcissa, float ordenada,
+	private static Unidade newUnit(boolean mobilidade,String id, float abcissa, float ordenada,
 			boolean video, boolean termometro, boolean co2, boolean ch4) {
 		if(mobilidade)
 			return new Euclidiana(id, abcissa, ordenada, video, termometro, co2, ch4);
@@ -36,7 +36,7 @@ public class Monitoramento {
 		else return null;
 	}
 	
-	public static boolean validar(Unidade unit, boolean video, boolean termometro, boolean co2, boolean ch4) {
+	private static boolean validar(Unidade unit, boolean video, boolean termometro, boolean co2, boolean ch4) {
 		
 		if((video && !unit.getVideo()) || (termometro && !unit.getTermometro()) || 
 			(co2 && !unit.getCo2()) || (ch4 && !unit.getCh4()))
@@ -58,8 +58,12 @@ public class Monitoramento {
 		}
 		
 		System.out.println();
-		System.out.println("ID da unidade que atende os requisitos e se encontra na menor distancia efetiva: "
-							+ monitorar(50, 50, true, true, false, false));
+		String s = monitorar(50, 50, true, true, false, false);
+		if(s !=null)
+			System.out.println("ID da unidade que atende os requisitos e"
+								+ " se encontra na menor distancia efetiva: "+ s + ".");
+		else
+			System.out.println("Nenhuma unidade atende aos requisitos");
 			
 
 	}

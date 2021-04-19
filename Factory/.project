@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Factory</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>java</name>
+			<type>2</type>
+			<location>D:/Programming Stuff/eclipse-workspace/RSyntaxTextArea-master/RSyntaxTextArea/src/main/java</location>
+		</link>
+		<link>
+			<name>rsyntaxtextarea-3.1.2.jar</name>
+			<type>1</type>
+			<location>C:/Users/Cliente/Desktop/backup/2/rsyntaxtextarea-3.1.2.jar</location>
+		</link>
+	</linkedResources>
+</projectDescription>
